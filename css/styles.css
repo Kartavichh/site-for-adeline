@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Playfair Display'), url('assets/fonts/Playfair Display SC/PlayfairDisplaySC-Regular.ttf') format('ttf');
+    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+  body {
+    font-family: 'Jura', sans-serif;
+    background-color: #E8E8E8;
+    color: #000;
+    line-height: 1.5;
+  }
+  
+  header.header {
+    background: linear-gradient(90deg, #CBCDBA 0%, #66675D 100%);
+    padding: 40px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 28px;
+    text-shadow: 3px 3px 10px black;
+    margin-left: 27%;
+    width: 44vh;
+  }
+  
+  .nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .hero {
+    background: linear-gradient(180deg, #CED1BE 0%, #534635 119.19%);
+    background-image: url(../assets/img/mainImage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    color: #CED1BE;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+  .hero h1{
+    font-family: Playfair Display;
+    font-weight: lighter;
+    font-size: 33px;
+  }
+  .hero p{
+    width: 80%;
+    margin: 14% auto;
+    text-shadow: 3px 3px 4px black;
+  }
+  .about {
+    background-color: #504835;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 20px;
+    color: #fff;
+  }
+  
+  .about__image img {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 10px 20px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+  
+  .about__text {
+    max-width: 600px;
+  }
+  
+  section h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .price__grid,
+  .reviews__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .card {
+    background: #D9D9D9;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .price__amount {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .review {
+    background: #EDEEE9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .order {
+    background: linear-gradient(180deg, #AE7266 0%, #DADCCE 71.1%);
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+  
+  .order__form {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .order__form input,
+  .order__form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+  }
+  
+  .order__form button {
+    padding: 10px;
+    background-color: rgba(106, 107, 96, 0.7);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .order__contact {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  
+  .thankyou {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #B37F72 0%, #DADCCE 63.18%);
+    color: #EDEEE9;
+  }
+  
+  footer.footer {
+    background-color: #564F45;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
