@@ -231,21 +231,27 @@
 
   <section id="order" class="order">
     <h2>Оформим заказ?</h2>
-    <form class="order__form">
-      <label>Имя <input type="text" name="name" required></label>
-      <label>Вариант игрушки <input type="text" name="product" required></label>
-      <label>Телефон <input type="tel" name="phone" required></label>
-      <label>Email <input type="email" name="email" required></label>
-      <label>Ваши пожелания <textarea name="message"></textarea></label>
-      <button type="submit">Отправить</button>
-    </form>
-    <div class="order__contact">
-      <p>Телефон: +7(960)-488-12-47</p>
-      <p>Telegram: @WolHebFar</p>
-      <p>Email: wolhebnifarfor@mail.com</p>
-      <p>ВК: <a href="https://vk.com/id742414956" target="_blank">Наша группа</a></p>
+    <div class="order-container">
+      <form class="order__form">
+        <label id="name">Имя <input type="text" name="name" required></label>
+        <label id="product">Вариант игрушки <input type="text" name="product" required></label>
+        <label id="phone">Телефон <input type="tel" name="phone" required></label>
+        <label id="email">Email <input type="email" name="email" required></label>
+        <label id="message">Ваши пожелания <textarea name="message"></textarea></label>
+        <button type="submit">Отправить</button>
+      </form>
+      <div class="order__contact">
+        <h3>Остались вопросы?</h3>
+        <ul>
+          <li>Телефон для связи: <a href="tel:+79604881247">+7(960)-488-12-47</a></li>
+          <li>Telegram канал: <a href="https://t.me/WolHebFar" target="_blank">@WolHebFar</a></li>
+          <li>Email: <a href="mailto:wolhebnifarfor@mail.com">wolhebnifarfor@mail.com</a></li>
+          <li>Группа ВК: <a href="https://vk.com/id742414956" target="_blank">Наша группа</a></li>
+        </ul>
+      </div>
     </div>
   </section>
+  
 
   <section class="thankyou">
     <h2>Спасибо за заявку!</h2>

@@ -201,9 +201,11 @@
   }
   
   section h2 {
-    font-family: 'Playfair Display SC', serif;
+    font-family: Jura;
+    font-weight: 700;
     font-size: 32px;
-    margin-bottom: 20px;
+    line-height: 100%;
+    margin: 6% 0% 3% 6%;
   }
   /* price section */
   .aboutPrice {
@@ -428,38 +430,109 @@
   /* order sections */
   .order {
     padding: 40px 20px;
-    border-radius: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .order-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
   }
   
   .order__form {
     display: grid;
-    gap: 20px;
-    max-width: 600px;
-    margin: auto;
+    gap: 15px;
+    background: linear-gradient(180deg, #AE7266 0%, #DADCCE 71.1%);
+    padding: 20px 32px;
+    border-radius: 20px;
+    box-shadow: 9px 9px 9px 6px #00000040 inset;
+    min-width: 600px;
   }
   
-  .order__form input,
-  .order__form textarea {
+  .order__form label {
+    display: block;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .order__form input, .order__form textarea {
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #aaa;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
   }
   
   .order__form button {
-    padding: 10px;
-    background-color: rgba(106, 107, 96, 0.7);
-    color: #fff;
+    background-color: #6A6B60;
+    color: white;
     border: none;
+    padding: 12px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
+    font-size: 16px;
+    grid-row: 4;
+    grid-column: 1 / 2;
   }
   
-  .order__contact {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 14px;
+  .order__form button:hover {
+    background-color: #4f5047;
+    grid-row: 4;
+    grid-column: 1 / 2;
   }
+  #name{
+
+  }
+  #product{
+    grid-row: 1;
+    grid-column: 2;
+  }
+  #phone{
+
+  }
+  #email{
+
+  }
+  #message{
+    grid-row: 3;
+    grid-column: span 2;
+  }
+  .order__contact {
+    background: #CBCCC4A3;
+    box-shadow: 15px 15px 15px 0px #00000040;
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .order__contact h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .order__contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order__contact li {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .order__contact a {
+    color: #6A6B60;
+    text-decoration: none;
+  }
+  
+  .order__contact a:hover {
+    text-decoration: underline;
+  }
+  
   
   .thankyou {
     text-align: center;
