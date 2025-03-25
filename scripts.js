@@ -70,3 +70,35 @@ reviewButtonNext.addEventListener('click', () => scrollCarousel(reviewTrack, 1))
 // Инициализация при загрузке
 window.addEventListener('load', initCarousel);
 window.addEventListener('resize', initCarousel); // Обновляем при изменении размера окна
+
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('.order-form');
+  const modal = document.getElementById('thankyouModal');
+  const closeBtn = document.querySelector('.close-modal');
+
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Предотвращаем реальную отправку формы
+      
+      // Показываем модальное окно
+      modal.style.display = 'flex';
+      
+      // Здесь можно добавить код для реальной отправки формы
+      // Например, с помощью fetch или XMLHttpRequest
+    });
+  }
+
+  // Закрытие модального окна
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+    });
+  }
+
+  // Закрытие при клике вне окна
+  window.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});
