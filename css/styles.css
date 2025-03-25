@@ -446,6 +446,7 @@
         margin: 0 auto;
         justify-items: center;
         align-items: center;
+        min-height: 100vh;
   }
   
   .order-title {
@@ -558,8 +559,37 @@
       margin-top: 0;
     }
   }
+  .contact-icon {
+    width: 24px;  /* Размер иконок */
+    height: 24px;
+    margin-right: 10px;  /* Отступ справа */
+    vertical-align: middle;  /* Выравнивание по центру */
+  }
   
+  .contact-item {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+  }
   
+  .contact-item a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .contact-item a:hover {
+    color: #AD7166;  /* Цвет при наведении */
+  }
+  .navigation-bar-order{
+    display: flex;
+    padding: 20px;
+    background: #564F45;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+  }
   .thankyou {
     text-align: center;
     padding: 60px 20px;
