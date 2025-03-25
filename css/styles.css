@@ -429,43 +429,75 @@
   }
   /* order sections */
   .order {
-    padding: 40px 20px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    background: E8E8E8;
+    padding: 60px 20px;
+    min-height: 100vh;
   }
   
-  .order-container {
+  .order-grid {
+    display: grid    ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "title title"
+            "form contacts";
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-items: center;
+        align-items: center;
+  }
+  
+  .order-title {
+    grid-area: title;
+    font-family: 'Jura', sans-serif;
+    font-size: 32px;
+    color: #000;
+    justify-self: start;
+    margin-left: 20px;
+  }
+  
+  .order-form {
+    grid-area: form;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    justify-items: center;
-    align-items: center;
-  }
-  
-  .order__form {
-    display: grid;
-    gap: 15px;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
     background: linear-gradient(180deg, #AE7266 0%, #DADCCE 71.1%);
-    padding: 20px 32px;
-    border-radius: 20px;
+    padding: 40px;
+    border-radius: 10px;
     box-shadow: 9px 9px 9px 6px #00000040 inset;
-    min-width: 600px;
   }
   
-  .order__form label {
+  .name-field { grid-area: 1 / 1; }
+  .product-field { grid-area: 1 / 2; }
+  .phone-field { grid-area: 2 / 1; }
+  .email-field { grid-area: 2 / 2; }
+  .message-field { grid-area: 3 / 1 / span 1 / span 2; }
+  .submit-btn { grid-area: 4 / 1 / span 1 / span 2; }
+  
+  .order-form label {
     display: block;
     font-size: 18px;
-    color: #333;
+    color: #000;
+    margin-bottom: 8px;
   }
   
-  .order__form input, .order__form textarea {
+  .order-form input,
+  .order-form textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    background: white;
   }
   
-  .order__form button {
+  .order-form textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .submit-btn {
     background-color: #6A6B60;
     color: white;
     border: none;
@@ -473,64 +505,58 @@
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    grid-row: 4;
-    grid-column: 1 / 2;
+    margin-top: 10px;
   }
   
-  .order__form button:hover {
-    background-color: #4f5047;
-    grid-row: 4;
-    grid-column: 1 / 2;
-  }
-  #name{
-
-  }
-  #product{
-    grid-row: 1;
-    grid-column: 2;
-  }
-  #phone{
-
-  }
-  #email{
-
-  }
-  #message{
-    grid-row: 3;
-    grid-column: span 2;
-  }
-  .order__contact {
-    background: #CBCCC4A3;
-    box-shadow: 15px 15px 15px 0px #00000040;
-    backdrop-filter: blur(4px);
-    padding: 20px;
-    border-radius: 15px;
-    width: fit-content;
-    height: fit-content;
-  }
-  
-  .order__contact h3 {
+  .questions-title {
+    grid-area: contacts;
+    align-self: start;
     font-size: 22px;
     margin-bottom: 20px;
+    color: #000;
+  }
+  .contact-block{
+    height: fit-content;
+  }
+  .contact-info {
+    grid-area: contacts;
+    align-self: start;
+    background: #CBCCC4A3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px 0px #00000040;
+    backdrop-filter: blur(4px);   
+    margin-top: 40px;
   }
   
-  .order__contact ul {
+  .contact-info ul {
     list-style: none;
     padding: 0;
   }
   
-  .order__contact li {
+  .contact-info li {
     font-size: 16px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    color: #000;
   }
   
-  .order__contact a {
-    color: #6A6B60;
-    text-decoration: none;
-  }
-  
-  .order__contact a:hover {
+  .contact-info a {
+    color: #000;
     text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .order-grid {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "title"
+        "form"
+        "contacts";
+    }
+    
+    .contact-info {
+      margin-top: 0;
+    }
   }
   
   
