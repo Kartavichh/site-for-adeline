@@ -591,6 +591,8 @@
     justify-content: center;
   }
 /* Стили для модального окна */
+/* Стили для модального окна */
+/* Стили для модального окна */
 .thankyou-modal {
   display: none;
   position: fixed;
@@ -598,46 +600,39 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
   align-items: center;
   justify-content: center;
+  background-image: url('../assets/img/thankyouPic.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .thankyou-content {
-  background: linear-gradient(180deg, #B37F72 0%, #DADCCE 63.18%);
   padding: 40px;
   border-radius: 10px;
   text-align: center;
-  max-width: 500px;
+  max-width: fit-content;
   width: 90%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .thankyou-content h2 {
-  font-family: 'Playfair Display', serif;
   margin-bottom: 20px;
-  color: #000;
-}
-
-.thankyou-content p {
-  font-family: 'Jura', sans-serif;
-  margin-bottom: 30px;
-  line-height: 1.6;
-  color: #000;
-}
-
-.close-modal {
-  background-color: #6A6B60;
   color: white;
+  font-family: Playfair Display SC;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 3px 3px 4px black;
+}
+.close-modal {
+  background-color: transparent;
   border: none;
-  padding: 12px 25px;
-  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s;
-}
-
-.close-modal:hover {
-  background-color: #4f5047;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
