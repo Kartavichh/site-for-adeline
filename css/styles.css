@@ -221,7 +221,7 @@
     line-height: 100%;
     color: #000;
     min-width: fit-content;
-    margin: 5% 0 0px 43%;
+    margin: 4% 0 0px 43%;
 }
   .price__grid,
   .reviews__grid {
@@ -348,6 +348,7 @@
   background-color: #9B8C7C;
   color: white;
   cursor: pointer;
+  width: 100%;
 }
 
 /* Кнопки карусели */
@@ -379,12 +380,31 @@
     margin: 0 10px;
     width: 100%;
   }
+  .reviews {
+    background: #D9D9D9;
+  }
   .review-content {
     display: flex;
     align-items: center;
     gap: 20px;
   }
-  
+  .aboutReviews {
+    background: linear-gradient(90deg, #AD7166 0%, #DADCCE 100%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+    box-shadow: 14px 1px 12px 0px #00000040;
+    width: 21vh;
+    text-align: center;
+    font-family: Jura;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: #000;
+    min-width: fit-content;
+    margin: 4% 0 0px 47%;
+}
   .review-photo {
     width: 80px;
     height: 80px;
@@ -396,9 +416,17 @@
     flex: 1;
     text-align: left;
   }
+  .navigation-bar-review {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background: #564F45;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
   /* order sections */
   .order {
-    background: linear-gradient(180deg, #AE7266 0%, #DADCCE 71.1%);
     padding: 40px 20px;
     border-radius: 20px;
   }
